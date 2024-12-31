@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  scroll-behavior: smooth;
+}
+.navCol {
+  background-color: #2c3e50;
+}
+
+/* .navbar-expand-lg .navbar-nav .nav-link:active {
+  background-color: #1abc9c !important;
+  border-radius: 5px;
+} */
+.activeTab {
+  background-color: #1abc9c !important;
+  border-radius: 5px;
+}
+
+.bg-foot1 {
+  background-color: #2c3e50;
+}
+.bg-foot2 {
+  background-color: #1a252f;
+}
+i.circ {
+  border-radius: 50%;
+  padding: 5%;
+  border: 1px solid white;
+}
+
+.bg-about {
+  background-color: #1abc9c;
+}
+.bg-about i {
+  z-index: 10000 !important;
+}
+
+.bg-about i::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -90px;
+  height: 3px;
+  width: 200px;
+  background: linear-gradient(
+    to right,
+    white 33.33%,
+    transparent 33.33% 66.66%,
+    white 66.66%
+  );
+}
+.bl-icon::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -90px;
+  height: 3px;
+  width: 200px;
+  background: linear-gradient(
+    to right,
+    black 33.33%,
+    transparent 33.33% 66.66%,
+    black 66.66%
+  );
+}
+
+.cover {
+  background-color: #2eae95;
+  opacity: 0;
+  transition: all 0.25s;
+}
+.cover:hover {
+  opacity: 0.9;
+}
+
+#form label {
+  color: #1abc9c;
+  /* display: none; */
+}
+
+.bg-btn {
+  background-color: #1abc9c !important;
+  color: white !important;
+}
+
+input {
+  border: none !important;
+  margin: 0px 0px 50px !important;
+  box-shadow: gray 0px 0.5px;
+}
