@@ -14,7 +14,9 @@ function App() {
       { path: "portfolio", element: <Portfolio /> },
       { path: "contact", element: <Contact /> },
     ]
-  }
+  }, [{
+    path: "*", element: <Output />
+  }]
   ])
 
   return (
